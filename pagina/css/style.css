@@ -1,0 +1,63 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+.header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section {
+    width: 67%;
+}
+
+.nombre {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px;
+}
+
+.caja1 {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+
+.foto_perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto_perfil img {
+    width: 40%;
+    padding-top: 20px;
+}
+
+.caja2 {
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 200px;
+    float: left;
+}
