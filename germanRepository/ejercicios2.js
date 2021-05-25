@@ -88,37 +88,35 @@ function divisibleCinco() {
 4. Cree un programa que lea un número entre 1 y 15 y muestre si éste es primo o no. Realice una versión con condicionales y otra con estructura switch-case.
 */
 
-function primo() {
+function esPrimo(numero) {
     
-    let numero = parseInt(prompt("Por favor ingrese un numero entero"));
+    //let numero = parseInt(prompt("Por favor ingrese un numero entero"));
 
     let contador = 0;
 
     for(let i = 1; i <= numero; i++)
     {
-        if (numero % i===0)
+        if (numero % i === 0)
         {
-            contador= contador + 1;
+            contador = contador + 1;
         };   
     }
 
 
     if (contador ===2)
     {
-        console.log("Es primo")
+        return true;
     }
-    else
-    {
-        console.log("No es primo")
-    }
-
-    switch(contador) 
-    {
-        case 2:
-            console.log("Es primo");
-            break;
     
-        default:
-            console.log("No es primo");
-    }
+    return false;
+
+    // switch(contador) 
+    // {
+    //     case 2:
+    //         console.log("Es primo");
+    //         break;
+    
+    //     default:
+    //         console.log("No es primo");
+    // }
 }
