@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+
+    min-height: 80vh;
+    color: rgb(255, 255, 255);
+
+    background-image: url("../images/angel-jimenez.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.music {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.music span {
+    font-size: 10vmax;
+    font-weight: bold;
+
+}
+
+.content {
+    background-color: rgb(255, 255, 255);
+    max-width: 120vh;
+    margin: auto;
+    padding-top: 100px;
+
+}
+
+.row1 {
+    display: flex;
+}
+
+.row2 {
+    display: flex;
+    padding-top: 100px;
+}
+
+.right1 img {
+    height: 450px;
+}
+
+.left1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 50px;
+
+
+}
+
+.big {
+    margin-block-start: 3px;
+    margin-block-end: 3px;
+    font-size: 40px;
+    font-weight: bolder;
+
+
+}
+
+.left2 img {
+    height: 450px;
+}
+
+.right2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+button {
+
+    border-radius: 28px;
+    background-color: rgb(252, 47, 89);
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 10px 31px;
+    text-decoration: none;
+    border: none;
+
+
+}
