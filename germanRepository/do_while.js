@@ -33,6 +33,6 @@ function promedio()
     } while (numero != 0);
 
     promedio = suma/(contador-1);
-    
-    console.log(`El promedio es ${promedio}`)
+
+    return promedio;
 }
