@@ -48,6 +48,16 @@ function promedio(){
 
 }
 
+/*
+¿Cuál es el máximo valor que puede representarse con 16 bits y un sistema de representación posicional como el
+descrito? ¿Qué secuencia de bits le corresponde?
+*/
+
+function bits(bits) {
+
+    return Math.pow(2,bits)-1;
+    
+}
 
 
 
