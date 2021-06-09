@@ -1,0 +1,13 @@
+table {
+    width: 100%;
+}
+
+
+td {
+    width: 24pt;
+    height: 24pt;
+}
+
+.democlass {
+    background-color: rgb(38, 39, 41);
+}
