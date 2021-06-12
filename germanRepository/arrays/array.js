@@ -39,6 +39,7 @@ function maxMin(array){
     return (`min ${array[0]} - max ${array[array.length-1]}`);
 }
 
+
 /*
 Usando Quick Sort
 */
@@ -65,5 +66,12 @@ function maxMin2(array){
     return [].concat(maxMin2(left),pivot,maxMin2(right));
 }
 
-   
+/*
+Usando operador Spread u operador de propagación
+*/
+
+function maxMin3(array){
+    
+     return (`min ${Math.min(...array)} - max ${Math.max(...array)}`);
+}
 
