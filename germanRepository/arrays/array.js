@@ -71,7 +71,34 @@ Usando operador Spread u operador de propagación
 */
 
 function maxMin3(array){
-    
+
      return (`min ${Math.min(...array)} - max ${Math.max(...array)}`);
 }
+
+
+/* Concatenar dos arrays en uno
+let arrayResultante = [...arra1,...array2];
+ */
+
+/* 
+Copiar un array dentro de otro
+let arrayCopia = [...array]
+ */ 
+
+ /* 
+ Otra manera de copiar un array
+ 
+ let a = [1,2,3,4,5];
+
+let b = a;
+(a===b);//Result true
+
+a = a.map((elem)=>(elem +1));
+
+(a===b);// Result false
+  */
+
+
+let arr = [1, 2, 3];
+let arr2 = [...arr]; // like arr.slice()
 
