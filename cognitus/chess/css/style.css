@@ -4,10 +4,14 @@ table {
 
 
 td {
-    width: 24pt;
-    height: 24pt;
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+    font-size: 7vmax;
 }
 
 .democlass {
-    background-color: rgb(38, 39, 41);
+    background-color: rgba(73, 102, 160, 0.397);
+    border-radius: 5px;
+
 }
