@@ -18,6 +18,10 @@
         padding: 2px;
     }
 
+    li:first-letter {
+        text-transform: capitalize;
+    }
+
     /* #print {
         margin-top: 15px;
     } */

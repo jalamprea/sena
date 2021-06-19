@@ -1,27 +1,27 @@
 const products = {
   
   product1:{
-    name:'ACEITE',
+    name:'aceite',
     price:1800
   },
   product2:{
-    name:'ARROZ',
+    name:'arroz',
     price:2000
   },
   product3:{
-    name:'PAPA',
+    name:'papa',
     price:1300
   },
   product4:{
-    name:'HUEVOS',
+    name:'huevos',
     price:1800
   },
   product5:{
-    name:'CHOCOLATE',
+    name:'chocolate',
     price:5000
   },
   product6:{
-    name:'LECHE',
+    name:'leche',
     price:3500
   },
 }
@@ -48,15 +48,19 @@ function searchProduct() {
 
     let elem = prompt(`Digite el produto a buscar:`);
     let precio=document.getElementById("precio");
+    let contador=0;
 
     for (const product in products) {
         
         if((products[product]['name'])===elem){
 
-           precio.innerHTML=`El producto <span>${products[product].name}</span> cuesta <span>$${products[product].price}</span> pesos`;
-
+           precio.innerHTML=`El producto <span>${(products[product].name).toUpperCase()}</span> cuesta <span>$${products[product].price}</span> pesos`;
+            contador++;
         }
 
+    }
+    if(contador===0){
+        precio.innerHTML=`<span>Lo lamento no se encontro el producto</span>`;
     }
 }
 
