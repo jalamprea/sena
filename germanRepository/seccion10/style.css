@@ -13,6 +13,11 @@
         align-items: center;
     }
 
+    li {
+        list-style: none;
+        padding: 2px;
+    }
+
     /* #print {
         margin-top: 15px;
     } */
