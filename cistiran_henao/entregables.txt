@@ -1,0 +1,5 @@
+1) Organizar los equipos y repartir los roles de SCRUM
+2) Construir el Product BackLog (Documento de Requisitos y tareas de planteamiento del problema)
+3) Planear 2 Sprint para el desarrollo de las funcionaldes  (Vincular las tareas para documento de planteamiento del problema y documento de Historias de Usuario)
+4) Construir el Sprint BackLog
+5) Actas de Daily ( 3 actas - 1 De planeación, 1 de Seguimiento, 1 de Entrega)

@@ -1,44 +1,62 @@
 const products = {
   
   product1:{
-    name:'Aceite',
+    name:'ACEITE',
     price:1800
   },
   product2:{
-    name:'Arroz',
+    name:'ARROZ',
     price:2000
   },
   product3:{
-    name:'Papa',
+    name:'PAPA',
     price:1300
   },
   product4:{
-    name:'Huevos',
+    name:'HUEVOS',
     price:1800
   },
   product5:{
-    name:'Chocolate',
+    name:'CHOCOLATE',
     price:5000
+  },
+  product6:{
+    name:'LECHE',
+    price:3500
   },
 }
 
 
-for (const product in products) {
+function printProducts() {
+    
+    let lista=document.getElementById("listado"); 
+    let linew, contenido;
 
-  console.log(`${products[product]['name']}`);
+    lista.innerHTML="";
 
+    for (const product in products) {
 
+        linew= document.createElement("li");        
+        contenido = document.createTextNode(`${products[product].name}`);
+        lista.appendChild(linew);
+        linew.appendChild(contenido);
+
+    }
 }
 
-let elem = prompt('Digite el nombre de un producto de la lista:');
+function searchProduct() {
 
-for (const product in products) {
+    let elem = prompt(`Digite el produto a buscar:`);
 
-  if((products[product]['name'])===elem){
-      console.error(`${products[product]['price']}`);
-      //debugger
-  }
+    for (const product in products) {
+        
+        if((products[product]['name'])===elem){
 
+          alert(`El producto cuesta $${products[product].price} pesos`);
+          
+        }
+
+    }
 }
 
 
