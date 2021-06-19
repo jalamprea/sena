@@ -47,13 +47,14 @@ function printProducts() {
 function searchProduct() {
 
     let elem = prompt(`Digite el produto a buscar:`);
+    let precio=document.getElementById("precio");
 
     for (const product in products) {
         
         if((products[product]['name'])===elem){
 
-          alert(`El producto cuesta $${products[product].price} pesos`);
-          
+           precio.innerHTML=`El producto cuesta <span>$${products[product].price}</span> pesos`;
+
         }
 
     }
