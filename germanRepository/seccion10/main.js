@@ -24,6 +24,18 @@ const products = {
     name:'leche',
     price:3500
   },
+  product7:{
+    name:'tomate',
+    price:2000
+  },
+  product8:{
+    name:'pan',
+    price:1000
+  },
+  product9:{
+    name:'mantequilla',
+    price:4700
+  },
 }
 
 
