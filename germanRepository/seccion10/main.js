@@ -66,13 +66,13 @@ function searchProduct() {
         
         if((products[product]['name'])===elem){
 
-           precio.innerHTML=`El producto <span>${(products[product].name).toUpperCase()}</span> cuesta <span>$${products[product].price}</span> pesos`;
+           precio.innerHTML=`El producto <span>${(products[product].name).toUpperCase()}</span> cuesta <span>$${products[product].price}</span> pesos.`;
             contador++;
         }
 
     }
     if(contador===0){
-        precio.innerHTML=`<span>Lo lamento no se encontro el producto</span>`;
+        precio.innerHTML=`<span>Lo lamento, no se encontro el producto.</span>`;
     }
 }
 
