@@ -38,6 +38,14 @@ const products = {
   },
 }
 
+let input = document.getElementById("formulario_producto");
+input.addEventListener("keydown", function(event) {
+  if (event.key === 'Enter') {
+   event.preventDefault();
+   document.getElementById("search").click();
+  }
+});
+
 
 function printProducts() {
     
@@ -58,7 +66,8 @@ function printProducts() {
 
 function searchProduct() {
 
-    let elem = prompt(`Digite el produto a buscar:`);
+    // let elem = prompt(`Digite el produto a buscar:`);
+    let elem = document.getElementById('formulario_producto').value;
     let precio=document.getElementById("precio");
     let contador=0;
 

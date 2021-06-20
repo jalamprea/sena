@@ -12,15 +12,26 @@
 
 <body>
     <div class="container">
-
+        <div class="imagen">
+            <img src="./images/Let_cadali2.png" alt="">
+        </div>
+        <div class="formulario">
+            <form action="">
+                <label>Producto: <input id="formulario_producto" type="text" name="producto"></label>
+            </form>
+        </div>
+        <div class="tienda">Listado productos</div>
         <div id="listado"></div>
-        <button id="print" onclick="printProducts()">Mostrar productos</button><br>
-        <button id="search" onclick="searchProduct()">Buscar producto</button>
+        <div class="button1">
+            <button id="print" onclick="printProducts()">Mostrar productos</button><br>
+        </div>
+        <div class="button2">
+            <button id="search" onclick="searchProduct()">Buscar producto</button>
+        </div>
         <div id="precio"></div>
     </div>
-
+    <br>
     <script src="./main.js"></script>
-
 </body>
 
 </html>
