@@ -49,7 +49,7 @@ input.addEventListener("keydown", function(event) {
 
 function printProducts() {
     
-    let lista=document.getElementById("listado"); 
+    let lista=document.getElementById("listado_ul"); 
     let linew, contenido;
 
     lista.innerHTML="";
