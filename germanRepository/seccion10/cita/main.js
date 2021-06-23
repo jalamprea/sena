@@ -1,4 +1,5 @@
 
+
 let array = [
     {
         nombres:'Carlos Augusto',
@@ -33,11 +34,15 @@ let boton_fecha = document.querySelector('#cambio_fecha');
 
 documento.addEventListener("keydown", function(event) 
 {
-
+   
+    
   if (event.key === 'Enter') 
   {
 
    event.preventDefault();
+
+   let counter = 0;
+   
    
      for (const persona in array) 
      {
@@ -55,8 +60,17 @@ documento.addEventListener("keydown", function(event)
             // fecha.innerHTML = `<h5>Fecha de la cita: <span class="badge bg-danger">${array[persona].fecha}</span></h5>`;
 
             fecha2.value = `${array[persona].fecha}`;
-            
+            counter++;
         }  
+     }
+
+     if(counter ===0){
+         Swal.fire({
+            title: 'Error!',
+            text: 'Documento no encontrado o inexistente',
+            icon: 'error',
+            confirmButtonText: 'Cerrar'
+        })
      }
   }
 });
@@ -95,7 +109,13 @@ boton_fecha.addEventListener("click", function(event) {
 
             array[persona]['fecha']=fecha2.value;
             fecha2.innerHTML = `${array[persona].fecha}`;
-            alert('El cambio de fecha ha sido exitoso.')
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Se han guardado los cambios',
+                showConfirmButton: false,
+                timer: 1500
+            })
             boton_fecha.disabled = true;           
             
         }  
