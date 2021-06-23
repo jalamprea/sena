@@ -1,3 +1,7 @@
+/*
+1. Cree un programa que pida al usuario el nombre de un producto existente en una tienda, luego, que le muestre el precio del producto. El usuario debe poder elegir de entre por lo menos cinco productos. Use diccionarios.
+*/
+
 const products = {
   
   product1:{
@@ -39,6 +43,7 @@ const products = {
 }
 
 let input = document.getElementById("formulario_producto");
+
 input.addEventListener("keydown", function(event) {
   if (event.key === 'Enter') {
    event.preventDefault();
@@ -58,8 +63,9 @@ function printProducts() {
 
         linew= document.createElement("li");        
         contenido = document.createTextNode(`${products[product].name}`);
+        linew.appendChild(contenido);       
         lista.appendChild(linew);
-        linew.appendChild(contenido);
+       
 
     }
 }
@@ -75,7 +81,7 @@ function searchProduct() {
         
         if((products[product]['name'])===elem){
 
-           precio.innerHTML=`El producto <span>${(products[product].name).toUpperCase()}</span> cuesta <span>$${products[product].price}</span> pesos.`;
+           precio.innerInnerHTML=`El producto <span>${(products[product].name).toUpperCase()}</span> cuesta <span>$${products[product].price}</span> pesos.`;
             contador++;
         }
 
