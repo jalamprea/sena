@@ -81,7 +81,7 @@ function searchProduct() {
         
         if((products[product]['name'])===elem){
 
-           precio.innerInnerHTML=`El producto <span>${(products[product].name).toUpperCase()}</span> cuesta <span>$${products[product].price}</span> pesos.`;
+           precio.innerHTML=`El producto <span>${(products[product].name).toUpperCase()}</span> cuesta <span>$${products[product].price}</span> pesos.`;
             contador++;
         }
 

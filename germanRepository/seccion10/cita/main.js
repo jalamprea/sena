@@ -65,6 +65,7 @@ documento.addEventListener("keydown", function(event)
      }
 
      if(counter ===0){
+         
          Swal.fire({
             title: 'Error!',
             text: 'Documento no encontrado o inexistente',
