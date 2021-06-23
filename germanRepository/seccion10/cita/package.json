@@ -1,5 +1,19 @@
 {
   "dependencies": {
     "sweetalert2": "^11.0.18"
-  }
+  },
+  "name": "cita",
+  "version": "1.0.0",
+  "description": "Programa de prueba para cambiar la fecha de la cita.",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "events"
+  ],
+  "author": "Carlos Aranzazu",
+  "license": "ISC"
 }
