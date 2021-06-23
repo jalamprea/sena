@@ -25,7 +25,7 @@
             </div>
         </form>
         <div id="mostrar" class="pt-3">
-            <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+            <div class="card text-dark bg-warning mb-6" style="max-width: 18rem;">
                 <div class="card-header">
                     <h4>Datos del paciente</h4>
                 </div>
@@ -33,7 +33,10 @@
                     <p class="card-text"></p>
                     <p class="card-title"></p>
                     <p class="card-text" id="apellidos"></p>
-                    <div class="footer"></div>
+                    <!-- <div class="footer"></div> -->
+                    <input class="form-control" type="datetime-local" id="meeting-time" name="meeting-time"
+                        value="2021-06-23T00:00" min="2021-07-01T00:00" max="2022-07-31T00:00">
+                    <button id="cambio_fecha" type="button" class="btn btn-danger mt-2" disabled>Cambiar fecha</button>
                 </div>
             </div>
         </div>
