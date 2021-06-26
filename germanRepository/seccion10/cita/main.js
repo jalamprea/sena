@@ -27,7 +27,6 @@ let documento = document.getElementById('documento');
 let titulo = document.querySelector('.card-title');
 let texto = document.querySelector('.card-text');
 let apellidos = document.querySelector('#apellidos');
-// let fecha = document.querySelector('.footer');
 let fecha2 = document.querySelector('#meeting-time');
 let boton_fecha = document.querySelector('#cambio_fecha');
 
@@ -51,9 +50,9 @@ documento.addEventListener("keydown", function(event)
          {
     
             
-            titulo.innerHTML = `<h5><span>Nombres:</span></h5> <span class="badge bg-secondary ">${array[persona].nombres}</span>`;
+            titulo.innerHTML = `<h5><span>Nombres:</span></h5> <span class="badge bg-danger ">${array[persona].nombres}</span>`;
 
-            apellidos.innerHTML = `<h5><span>Apellidos:</span></h5> <span class="badge bg-secondary ">${array[persona].apellidos}</span>`;
+            apellidos.innerHTML = `<h5><span>Apellidos:</span></h5> <span class="badge bg-danger ">${array[persona].apellidos}</span>`;
 
             texto.innerHTML = `<h5><span>Documento:</span></h5> <span class="badge bg-danger">${array[persona].documento}</span>`;
 
@@ -93,7 +92,6 @@ documento.addEventListener("keydown", function(event)
 // });
 
 fecha2.addEventListener("change", function(event) {
-  //console.log(documento.value);
 
   boton_fecha.disabled = false;
     
@@ -106,21 +104,20 @@ boton_fecha.addEventListener("click", function(event) {
 
          if((array[persona]['documento'])===documento.value){
     
-            // alert(array[persona]['ciudad']);
-
             array[persona]['fecha']=fecha2.value;
+
             fecha2.innerHTML = `${array[persona].fecha}`;
+            
             Swal.fire({
                 position: 'top-end',
                 icon: 'success',
                 title: 'Se han guardado los cambios',
                 showConfirmButton: false,
                 timer: 1500
-            })
-            boton_fecha.disabled = true;           
+            });
+
+            boton_fecha.disabled = true;
             
-        }  
-     }
-
-
+        }
+    }
 });
