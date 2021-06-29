@@ -3,7 +3,7 @@ let usuarios = [
     {
         nombres:'Carlos Augusto',
         apellidos: 'Aranzazu Jinete',
-        documento:'80002098',
+        documento:'53453523',
         user: 'augusto',
         pass: '1234',
         rol:'empleado',
