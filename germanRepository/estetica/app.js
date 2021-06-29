@@ -44,7 +44,7 @@ let empleados = [
         user: '',
         pass: '',
         rol:'empleado',
-        disponible: true,
+        disponible: false,
         servicio:'peluqueria',
         horario:'2021-02-01 00:00:00'
 
@@ -57,7 +57,7 @@ let empleados = [
         user:'yaneth',
         pass:'1234',
         rol:'cliente',
-        disponible: true,
+        disponible: false,
         servicio:'peluqueria',
         horario : '2021-02-01 00:00:00',
        
@@ -69,7 +69,7 @@ let empleados = [
         user:'juan',
         pass:'5678',
         rol:'empleado',
-        disponible: false,
+        disponible: true,
         servicio:'peluqueria',
         horario:'2021-02-01 00:00:00',
     }
@@ -155,5 +155,10 @@ function agendar(servicio){
         
             
      }
+}
+
+
+function pagar(){
+
 }
 
