@@ -192,3 +192,7 @@ td {
 .icon-send:before {
     content: "\f1d8";
 }
+
+td:hover {
+    background-color: rgb(255, 248, 182)
+}
