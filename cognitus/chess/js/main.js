@@ -14,6 +14,7 @@ function initial(n,m){
     for ( let i = 0; i < n; i++) {
         
         let row = document.createElement("tr");
+        chess[i]=[];
 
         for ( let j = 0; j < m; j++) {
         
@@ -25,74 +26,85 @@ function initial(n,m){
             if(i===0 && ((j===0)||(j===7))){
                 //Torre negra (B-R)
                 cell.innerHTML="&#9820;";
-                // chess[i][j]='B-R';
+                chess[i][j]='B-R';
+                cell.setAttribute("id", `${i}-${j}`);
             }
             if(i===0 && ((j===1)||(j===6))){
                 //Caballo negro (B-N)
                 cell.innerHTML="&#9822;";
-                // chess[i][j]='B-N';
+                chess[i][j]='B-N';
+                cell.setAttribute("id", `${i}-${j}`);
             }
             if(i===0 && ((j===2)||(j===5))){
                 //Alfil negro (B-B)
                 cell.innerHTML="&#9821;";
-                // chess[i][j]='B-B';
+                chess[i][j]='B-B';
+                cell.setAttribute("id", `${i}-${j}`);
             }
             if(i===0 && j===3){
                 //Rey negro (B-K)
                 cell.innerHTML="&#9819;";
-                // chess[i][j]='B-K';
+                chess[i][j]='B-K';
+                cell.setAttribute("id", `${i}-${j}`);
             }
             if(i===0 && j===4){
                 //Reina negra (B-Q)
                 cell.innerHTML="&#9818;";
-                // chess[i][j]='B-Q';
+                chess[i][j]='B-Q';
+                cell.setAttribute("id", `${i}-${j}`);
             }
             if(i===1){
                 //Peon negro (B-P)
                 cell.innerHTML="&#9823;";
-                // chess[i][j]='B-P';
+                chess[i][j]='B-P';
+                cell.setAttribute("id", `${i}-${j}`);
             }
 
             // if(i>=2 || i<=5)chess[i][j]='#';
-            
+              if(i>=2||i<=5 && chess[i][j]==''){
+                cell.setAttribute("id", `${i}-${j}`);
+                chess[i][j]='#'
+            }
+
             if(i===6){
                  //Peon blanco (W-P)
                 cell.innerHTML="&#9817;";
-                // chess[i][j]='W-P';
+                chess[i][j]='W-P';
+                cell.setAttribute("id", `${i}-${j}`);
             }
 
             if(i===7 && ((j===0)||(j===7))){
                  //Torre blanca (W-R)
                 cell.innerHTML="&#9814;";
                 // console.log(chess);
-                // chess[i][j]='W-R';
+                chess[i][j]='W-R';
+                cell.setAttribute("id", `${i}-${j}`);
             }
             if(i===7 && ((j===1)||(j===6))){
                 //Caballo blanco (W-N)
                 cell.innerHTML="&#9816;";
-                // chess[i][j]='W-N';
+                chess[i][j]='W-N';
+                cell.setAttribute("id", `${i}-${j}`);
             }
             if(i===7 && ((j===2)||(j===5))){
                 //Alfil blanco (W-B)
                 cell.innerHTML="&#9815;";
-                // chess[i][j]='W-B';
+                chess[i][j]='W-B';
+                cell.setAttribute("id", `${i}-${j}`);
             }
             if(i===7 && j===3){
                 //Rey blanco (W-K)
                 cell.innerHTML="&#9813;";
-                // chess[i][j]='W-K';
+                chess[i][j]='W-K';
+                cell.setAttribute("id", `${i}-${j}`);
             }
             if(i===7 && j===4){
                 //Reina blanca (W-Q)
                 cell.innerHTML="&#9812;";
-                // chess[i][j]='W-Q';
+                chess[i][j]='W-Q';
+                cell.setAttribute("id", `${i}-${j}`);
             }
            
-            // if(i>=2||i<=5){
-            //     chess[i][j]='#'
-            // }
-           
-          
             if(value%2!=0){    
                 cell.setAttribute("class", "democlass");
                     
@@ -104,10 +116,11 @@ function initial(n,m){
         value++;
 
         table.appendChild(row);
-        // console.log(chess);
+        
     }
 
     container.appendChild(table);
+    console.log(chess);
 
 }
 
