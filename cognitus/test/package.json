@@ -1,0 +1,16 @@
+{
+  "name": "chess",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon -r esm app.js"
+  },
+  "keywords": [],
+  "author": "Carlos Augusto Aranzazu Jinete",
+  "license": "MIT",
+  "description": "Ejercicio Ajedrez",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "nodemon": "^2.0.13"
+  }
+}

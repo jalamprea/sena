@@ -1,3 +1,5 @@
+// import mod from 'pieces';
+
 
 let chess = [];
 
@@ -139,7 +141,7 @@ function chessPieces(){
     function captura_click(e) {
 	
         // console.log(e.path[0]);
-        // console.log(e);
+         console.log(e.path[0].id);
         // ficha = e.
         
         // console.log(`Fila: ${e.path[1].rowIndex} Columna:${e.path[0].cellIndex} Ficha: ${e.path[0].innerHTML}`);
@@ -147,26 +149,35 @@ function chessPieces(){
         if(e.path[0].innerHTML!="" ){
             ficha = e.path[0].innerHTML;
             e.path[0].innerHTML= "";
+            // console.clear();
+            console.log(e.path[0].id[0],e.path[0].id[2]);
+
             
         }else if(e.path[0].innerHTML===""){
             e.path[0].innerHTML = ficha;
             ficha=""; 
+            // console.clear();
+            console.log(e.path[0].id[0],e.path[0].id[2]);
+            //  console.log(chess);
         
         }
         
 
-        // if(e.path[0].innerHTML===""){
-        //     // e.path[0].innerHTML = ficha;
-        //     ficha="";
-            
-        // }
-    
-        // if(e.path[0].innerHTML===""){
-        //     e.path[0].innerHTML = ficha
-        //     // ficha="";
-        // }    
+           
 }
 
-document.getElementById("container").addEventListener("click", captura_click, false);
+// document.getElementById("container").addEventListener("click", captura_click, false);
 
+// document.querySelectorAll('container').addEventListener("click", captura_click, false);
 
+// var allParas = document.getElementsByTagName("p");
+
+// const artd = document.querySelectorAll('td');
+// // articleImgs.addEventListener('click', captura_click)
+// 
+
+document.addEventListener("DOMContentLoaded",function(event){
+//FUNCION
+const artd = document.querySelectorAll('td');
+console.log(artd);
+});
