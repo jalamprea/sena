@@ -193,6 +193,12 @@ td {
     content: "\f1d8";
 }
 
-td:hover {
+td:hover,
+.fichaHover {
     background-color: rgb(255, 248, 182)
+}
+
+
+td.clicked {
+    background-color: rgb(255, 100, 100)
 }
